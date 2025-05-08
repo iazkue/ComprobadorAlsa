@@ -45,3 +45,5 @@ if __name__ == "__main__":
         while True:
             check_availability(url)
             time.sleep(CHECK_INTERVAL)
+    except KeyboardInterrupt:
+        print("\nInterrupción detectada. Cerrando el script...")

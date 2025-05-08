@@ -40,7 +40,8 @@ if __name__ == "__main__":
     # Obtener la URL desde los argumentos
     url = args.url
 
-    # Ejecutar comprobaciones en un bucle infinito
-    while True:
-        check_availability(url)
-        time.sleep(CHECK_INTERVAL)
+    try:
+        # Ejecutar comprobaciones en un bucle infinito
+        while True:
+            check_availability(url)
+            time.sleep(CHECK_INTERVAL)
